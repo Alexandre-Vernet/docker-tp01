@@ -30,6 +30,9 @@ docker pull mysql:5.7
 docker pull phpmyadmin/phpmyadmin
 docker run -d -e MYSQL_ROOT_PASSWORD=root mysql:5.7
 docker run -d -p 1234:80 phpmyadmin/phpmyadmin
+
+- Accéder à phpmyadmin sur localhost:1234
+- Se connecter avec root / root
 ```
 ## Etape 8
 Créer le docker-compose.yml (voir sur github)
