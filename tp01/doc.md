@@ -37,7 +37,7 @@ docker run -d -p 1234:80 phpmyadmin/phpmyadmin
 ## Etape 8
 Créer le docker-compose.yml (voir sur github)
 ```
-docker-compose up -d
+docker compose up -d
 ```
 - Accéder à phpmyadmin sur localhost:1234
 - Se connecter avec root / root
