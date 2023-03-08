@@ -48,5 +48,7 @@ docker-compose up -d
 a.
 - Lancer plusieurs conteneurs d'un coup
 - Plus simple pour gérer les variables d'environnement
+
+
 b. 
 - Utiliser des variables d'environnement
