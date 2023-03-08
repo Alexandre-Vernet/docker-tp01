@@ -52,3 +52,23 @@ a.
 
 b. 
 - Utiliser des variables d'environnement
+
+
+## Etape 9
+a.
+
+- Créer le docker-compose (voir sur github)
+```
+- docker compose up -d
+- docker ps (observer la création des 3 conteneurs)
+- docker exec -it tp01-web-1 //bin/bash
+- ping tp01-app-1 (OK)
+- ping tp01-db-1 (PAS OK)
+```
+
+b.
+- Il s'agit de la ligne contenant l'adresse IP du conteneur : 
+  - En effet, web est sur l'adresse 172.18.X.X et db sur 172.19.Y.Y ce qui explique qu'il ne peut pas y avoir de dialogues entre les deux
+
+c.
+- On pourrait avoir cette configuration réseau dans le cas que nous utilisons ici : un front, un back et une base de données, où le front et la bdd ne doivent pas pouvoir communiquer entre elles.
